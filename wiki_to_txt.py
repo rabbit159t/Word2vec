@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
 import logging
-import six
 import sys
 from gensim.corpora import WikiCorpus
 
@@ -12,11 +10,10 @@ if __name__ == '__main__':
         format='%(asctime)s: %(levelname)s: %(message)s', level=logging.INFO)
     logging.info("running %s" % ' '.join(sys.argv))
 
-    # check and process input arguments
     if len(sys.argv) != 3:
-        print("Using: python wiki_to_txt.py xxx.xml.bz2 [output]")
+        print("Using: python wiki_to_txt.py zhwiki-latest-pages-articles.xml.bz2 zhwiki_tmp.txt")
         sys.exit(1)
-    
+
     infile, outfile = sys.argv[1:3]
     wiki_corpus = WikiCorpus(infile, lemmatize=False, dictionary={})
 
