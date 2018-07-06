@@ -29,8 +29,6 @@ if __name__ == "__main__":
                     if word not in stopword_set:
                         output.write(word + ' ')
                 output.write('\n')
-                # if i == 5:
-                # break
 
-                if (i + 1) % 10000 == 0:
-                    logging.info("finished " + str(i + 1))
+                if i % 10000 == 0:
+                    logging.info("finished " + str(i))

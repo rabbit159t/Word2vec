@@ -24,4 +24,4 @@ if __name__ == '__main__':
             i += 1
             if i % 10000 == 0:
                 logging.info("Saved " + str(i) + " articles")
-        print("Finished!")
+        print("Transfer Finished!")
