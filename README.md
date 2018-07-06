@@ -1,7 +1,7 @@
 # Word2Vec
 ## Usage
 1. Download wiki data
-[zhwiki](https://dumps.wikimedia.org/zhwiki/latest/) or [enwiki](https://dumps.wikimedia.org/enwiki/latest/)
+[zhwiki](https://dumps.wikimedia.org/zhwiki/latest/) or [enwiki](https://dumps.wikimedia.org/enwiki/latest/)</br>
 Don't decompress .bz2 now
 
 2. Transfer wiki.xml to wiki.txt
